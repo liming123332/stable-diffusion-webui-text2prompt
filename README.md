@@ -42,8 +42,8 @@ git clone https://github.com/toshiaki1729/stable-diffusion-webui-text2prompt.git
 
  It's doing nothing special;
  
- 1. Danbooru tags and it's descriptions are in the `data` folder
-    -embeddigs of descriptions are generated from wiki
+ 1. Danbooru tags and it's descriptions are in the `data` folder  
+    - embeddigs of descriptions are generated from wiki
     - [all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2) and [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) models are used to make embeddings from the text
  1. Tokenize your input text and calculate cosine similarity with all tag descriptions
  1. Choose some tags depending on their similarities
