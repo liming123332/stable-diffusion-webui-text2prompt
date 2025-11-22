@@ -1,8 +1,15 @@
-# text2prompt
+# text2prompt (Enhanced Version)
  ![](pic/pic0.png)
 
- This is an extension to make prompt from simple text for [Stable Diffusion web UI by AUTOMATIC1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui).  
+ This is an enhanced extension to make prompt from simple text for [Stable Diffusion web UI by AUTOMATIC1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui).
  Currently, only prompts consisting of some danbooru tags can be generated.
+
+🆕 **New Features in Enhanced Version:**
+- ✅ **Integrated UI**: Now appears directly below the main prompt input area (no more separate tab!)
+- ✅ **Direct Prompt Transfer**: Generated prompts automatically fill the main prompt input box
+- ✅ **Fixed Prefix/Suffix**: Add your go-to prompt parts that always appear before/after generated content
+- ✅ **Simplified Interface**: Cleaner, more intuitive UI design
+- ✅ **Enhanced Experience**: Inspired by modern prompt generation tools
 
 ## Installation
 ### Extensions tab on WebUI
@@ -10,18 +17,47 @@ Copy `https://github.com/toshiaki1729/stable-diffusion-webui-text2prompt.git` in
 
 ### Install Manually
 
-To install, clone the repository into the `extensions` directory and restart the web UI.  
+To install, clone the repository into the `extensions` directory and restart the web UI.
 On the web UI directory, run the following command to install:
 ```commandline
 git clone https://github.com/toshiaki1729/stable-diffusion-webui-text2prompt.git extensions/text2prompt
 ```
 
+## Usage (New Enhanced Interface)
 
-## Usage
+### Quick Start
+1. Go to **txt2img** or **img2img** tab
+2. You'll see the **"🎨 Text2Prompt 智能提示词生成"** section below the main prompt input
+3. Type your theme description in the "主题描述" box (e.g., "蓝色的头发，白色的连衣裙")
+4. Optionally add negative themes in "负面主题" box
+5. Configure fixed prefix/suffix prompts in the right panel (optional)
+6. Click **"🚀 生成提示词"** button
+7. ✨ **Generated prompt automatically appears in the main prompt input box!**
+8. Proceed with image generation as usual
 
-1. Type some words into "Input Theme"
-1. Type some unwanted words into "Input Negative Theme"
-1. Push "Generate" button
+### Features Overview
+
+#### 📝 Input Area
+- **主题描述**: Main theme you want to generate
+- **负面主题**: Elements you want to avoid
+- **🚀 生成提示词**: Generate prompt button
+- **🗑️ 清空**: Clear all input fields
+
+#### ⚙️ Fixed Prompt Settings
+- **固定前缀提示词**: Always included at the beginning (default: "masterpiece, best quality, highres")
+- **固定后缀提示词**: Always included at the end
+- **启用固定提示词**: Toggle fixed prompts on/off
+
+#### 🔧 Advanced Settings
+- **数据库**: Choose tag database
+- **标签数量过滤器**: Filter by tag frequency
+- **最大标签数**: Maximum number of tags to generate
+- **概率转换方法**: Similarity to probability conversion
+- **采样方法**: Tag sampling method (NONE/Top-k/Top-p)
+- **权重强度**: Power for probability scaling
+- **k值/p值**: Sampling parameters
+- **用空格替换下划线**: Replace underscores with spaces
+- **转义括号**: Escape brackets in tags
 
 ![](pic/pic1.png)
 
